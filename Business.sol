@@ -25,7 +25,7 @@ contract Business {
    /*
    Sells the contract to the buyer. Ensures that the amount is greater than or equal to 2 ether.
    */
-   function sell(uint amount) public payable { 
+   function buy(uint amount) public payable { 
       if (amount > msg.value / 2 ether)
             revert InsufficientInputAmount();
       businessOwner=msg.sender;
